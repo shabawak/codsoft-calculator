@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <main class="wrapper">
+        <div class="grid-container">
+            <div class="item_screen1"><input type="number"  id="txtInput" ></div>
+            <div class="item_clr"><button id="btnClr" class="btn-clr" onclick="ClearScreen()">Clr</button></div>
+            <div class="item_screen2"><input type="text" value="" id="txtLbl" ></div>
+            <div class="item"><button id="btn7" onclick="displayNumber(this.innerText)" >7</button></div>
+            <div class="item5"><button id="btn8"  onclick="displayNumber(this.innerText)">8</button></div>
+            <div class="item6"><button id="btn9" onclick="displayNumber(this.innerText)">9</button></div>
+            <div class="item7"><button id="btnPlus" onclick="getOperator(this.innerText)">+</button></div>
+            <div class="item8"><button id="btn4" onclick="displayNumber(this.innerText)">4</button></div>
+            <div class="item9"><button id="btn5" onclick="displayNumber(this.innerText)">5</button></div>
+            <div class="item10"><button id="btn6" onclick="displayNumber(this.innerText)">6</button></div>
+            <div class="item11"><button id="btnMin" onclick="getOperator(this.innerText)">-</button></div>
+            <div class="item12"><button id="btn1" onclick="displayNumber(this.innerText)">1</button></div>
+            <div class="item13"><button id="btn2" onclick="displayNumber(this.innerText)">2</button></div>
+            <div class="item14"><button id="btn3" onclick="displayNumber(this.innerText)">3</button></div>
+            <div class="item15"><button id="btnMul" onclick="getOperator(this.innerText)">*</button></div>
+            <div class="item16"><button id="btnDot" onclick="displayNumber(this.innerText)">.</button></div>
+            <div class="item17"><button id="bbtn0" onclick="displayNumber(this.innerText)">0</button></div>
+            <div class="item18"><button id="btnEq" onclick="Calculate()">=</button></div>
+            <div class="item19"><button id="btnDiv" onclick="getOperator(this.innerText)">/</button></div>
+        </div>
+    </main>
+
+    <!--custom js-->
+    <script src="js/app.js"></script>
+</body>
+</html>
